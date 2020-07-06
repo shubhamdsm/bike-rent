@@ -12,6 +12,22 @@ body{
 .hero img{
     width: 100%;
 }
+.btn{
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    background-color: lightcoral;
+    color: #fff;
+    padding-bottom: 5px;
+    border: 1px solid lightslategray;
+    cursor: pointer;
+    min-width: 350px;
+    text-align: center;
+
+    }
+.btn:hover{
+    background-color: red;
+}
 @media only screen and (max-width: 600px){
 
     .profile{
@@ -63,21 +79,8 @@ body{
     .button h1{
         padding-bottom: 10px;
     }
-    .btn{
-        border: 0;
-        border-radius: 5px;
-        font-family: 'Poppins',sans-serif;
-        background-color: lightcoral;
-        color: #fff;
-        padding-bottom: 5px;
-        border: 1px solid grey;
-        cursor: pointer;
-        min-width: 350px;
-        text-align: center;
-
-        }
-    .btn:hover{
-        background-color: red;
+    .about-section{
+        background-color: #C0C0C0;
     }
 
 
@@ -125,7 +128,69 @@ body{
 }
 
 @media only screen and (min-width: 1060px) {
-    .profile{
-        background-color: red;
-    }
+   .profile{
+       display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+   }
+   .profile-img img{
+       border-radius: 50%;
+       width: 120px; 
+       height: 110px; 
+   }
+   .img-svg{
+       display: flex;
+       justify-content: space-around;
+       
+   }
+   .names{
+       display: flex;
+       justify-content: space-around;
+       visibility: hidden;
+   }
+  
+   .button h1{
+       text-align: center;
+   }
+   .about-section{
+       padding: 50px;
+       background-color: #C0C0C0;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   .about{
+       padding-top: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   .about h1{
+       padding-bottom: 30px;
+   }
+   .about p{
+       text-align: center;
+        padding-bottom: 20px;
+   }
+   .details{
+       padding-top: 40px;
+       
+   }
+   .timings{
+       display: flex;
+       flex-direction: column;
+       
+      
+   }
+   footer{
+       display: flex;
+
+   }
+   footer img{
+       width: 25%;
+   }
 }
